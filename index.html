@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRISM — Create a Prism. Invest in any Prism.</title>
+  <meta name="description" content="PRISM is a decentralized index basket protocol and financial education platform on Stellar Soroban Protocol 27. Micro-investing from $1.00 with atomic portfolio refraction.">
+  
+  <!-- Official Stellar Brand Typography: Lora (Display Serif) + Inter (Body/UI) + JetBrains Mono (Terminal/Code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="taste-canvas">
+
+  <!-- FLOATING TOP NAVIGATION (STELLAR RESTRAINT BRANDING) -->
+  <header class="top-nav-wrapper">
+    <div class="nav-floating-container">
+      
+      <!-- Left: Logo Pill -->
+      <a href="#" class="brand-pill" aria-label="PRISM Home">
+        <span class="brand-symbol">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 22 22 22"></polygon>
+            <line x1="12" y1="2" x2="12" y2="22" stroke-dasharray="2 2" stroke-width="1.8"></line>
+            <line x1="7" y1="12" x2="17" y2="12" stroke-width="1.8"></line>
+          </svg>
+        </span>
+        <span class="brand-text">PRISM</span>
+        <span class="brand-badge">v2</span>
+      </a>
+
+      <!-- Center / Right: Nav Links Pill -->
+      <nav class="nav-links-pill">
+        <a href="#how-it-works" class="nav-item">How It Works</a>
+        <a href="#simulator" class="nav-item">Simulator</a>
+        <a href="#marketplace" class="nav-item">Baskets</a>
+        <a href="#sandbox" class="nav-item">Sandbox</a>
+        <a href="#learn" class="nav-item">Learn</a>
+        <a href="#protocol" class="nav-item">Protocol</a>
+        
+        <!-- GitHub / Soroban Pill -->
+        <a href="https://github.com/stellar" target="_blank" rel="noopener" class="nav-github-pill" title="Stellar Soroban Protocol 27">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+          <span>87,128</span>
+          <span class="star-icon">★</span>
+        </a>
+
+        <!-- Connect Wallet Button -->
+        <button class="nav-wallet-btn" id="btnConnectWallet">
+          <span class="dot-indicator"></span>
+          <span id="walletBtnText">Connect Wallet</span>
+        </button>
+
+        <!-- Raven AI Trigger -->
+        <button class="nav-ai-btn" id="btnOpenAiCopilot" title="Ask Stellar Raven AI">
+          <span>✦ AI</span>
+        </button>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION (PRISM BRAND BLUEPRINT + STELLAR BRAND STUDY) -->
+    <section class="hero-split-section">
+      <div class="hero-backdrop-grain"></div>
+      
+      <div class="content-container hero-grid">
+        
+        <!-- Left Column: Official Brand Copy & CTA -->
+        <div class="hero-left-col">
+          
+          <!-- Release Pill -->
+          <div class="hero-release-pill">
+            <span class="pulse-dot"></span>
+            <span class="pill-text">v2 • Soroban Protocol 27 • 1-Click Refraction</span>
+            <span class="arrow-right">→</span>
+          </div>
+
+          <!-- Hero Headline (From PRISM Brand Guide) -->
+          <h1 class="hero-headline">
+            Create a Prism.<br>
+            <span class="hero-headline-accent">Invest in any Prism.</span>
+          </h1>
+
+          <!-- The Physical Prism Concept Flow -->
+          <div class="hero-spectrum-badge">
+            <span>$1.00 USDC</span>
+            <span class="arrow-sym">→</span>
+            <span class="badge-pill-center">PRISM Soroban Engine</span>
+            <span class="arrow-sym">→</span>
+            <span>Full Spectrum of RWAs &amp; Equities</span>
+          </div>
+
+          <!-- Value Prop Paragraph -->
+          <p class="hero-body-text">
+            A physical prism takes a single ray of white light and refracts it into a brilliant spectrum of color. PRISM takes <strong>1 single USDC deposit</strong> and automatically refracts it across tokenized US equities, Treasury yields, and commodities on Stellar in a single atomic transaction.
+          </p>
+
+          <!-- Interactive CLI Terminal Card -->
+          <div class="hero-cli-card">
+            <div class="cli-command">
+              <span class="cli-prompt">$</span>
+              <code>soroban contract invoke --id prism --fn refract</code>
+            </div>
+            <button class="cli-copy-btn" id="btnCopyCommand" title="Copy CLI Command">
+              <span class="copy-label" id="copyLabelText">COPY</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Hero Action Pill Buttons (Stellar Yellow Primary + Stellar Black Pill) -->
+          <div class="hero-cta-buttons">
+            <a href="#simulator" class="btn-yellow-pill">
+              <span>Invest from $1.00</span>
+              <span class="btn-arrow">→</span>
+            </a>
+            <a href="#sandbox" class="btn-black-pill">
+              <span>Try $10,000 Sandbox</span>
+              <span class="btn-arrow">→</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Column: 3D Floating Mockups -->
+        <div class="hero-right-col">
+          <div class="hero-cards-stage">
+            
+            <!-- Card 1: Top Web Preview -->
+            <div class="floating-card top-web-preview">
+              <div class="preview-mini-header">
+                <div class="traffic-lights">
+                  <span class="tl-red"></span>
+                  <span class="tl-yellow"></span>
+                  <span class="tl-green"></span>
+                </div>
+                <div class="preview-url-bar">prism.stellar.buzz/baskets/gi5</div>
+              </div>
+              <div class="preview-mini-body">
+                <div class="mini-hero-text">
+                  Global Innovation 5 <em>(GI5)</em>
+                </div>
+                <div class="mini-allocation-strip">
+                  <div class="strip-seg seg-1" style="width: 25%;">TSLA 25%</div>
+                  <div class="strip-seg seg-2" style="width: 25%;">AAPL 25%</div>
+                  <div class="strip-seg seg-3" style="width: 20%;">XLM 20%</div>
+                  <div class="strip-seg seg-4" style="width: 15%;">USTB 15%</div>
+                  <div class="strip-seg seg-5" style="width: 15%;">wBTC 15%</div>
+                </div>
+                <div class="mini-perf-stat">
+                  <span class="mini-badge-green">+14.2% 30d</span>
+                  <span class="mini-muted-label">TVL: $2,480,000 USDC</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Center Dark Code Terminal (lib.rs) -->
+            <div class="floating-card center-code-card">
+              <div class="code-card-header">
+                <div class="traffic-lights">
+                  <span class="tl-red"></span>
+                  <span class="tl-yellow"></span>
+                  <span class="tl-green"></span>
+                </div>
+                <span class="code-tab-title">contracts/prism/src/lib.rs</span>
+              </div>
+              <pre class="code-card-body"><code><span class="c-kw">pub fn</span> <span class="c-fn">refract</span>(
+  env: Env, 
+  from: Address, 
+  amount: i128, 
+  basket_id: u32
+) -&gt; Result&lt;(), Error&gt; {
+  <span class="c-comment">// 1. Load atomic basket allocation</span>
+  <span class="c-kw">let</span> basket = get_basket(&amp;env, basket_id)?;
+  <span class="c-comment">// 2. Single-TX SAC transfers</span>
+  <span class="c-kw">for</span> asset <span class="c-kw">in</span> basket.assets.iter() {
+    <span class="c-kw">let</span> share = (amount * asset.bps) / 10_000;
+    token::Client::new(&amp;env, &amp;asset.address)
+      .transfer(&amp;from, &amp;env.current_contract_address(), &amp;share);
+  }
+  <span class="c-fn">Ok</span>(())
+}</code></pre>
+            </div>
+
+            <!-- Card 3: Optical Refraction Pill Card -->
+            <div class="floating-card bottom-editorial-card">
+              <div class="editorial-card-brand">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polygon points="12 2 2 22 22 22"></polygon>
+                </svg>
+                <span>PRISM Protocol</span>
+              </div>
+              <div class="editorial-card-title">
+                One Dollar in.<br>Full spectrum out.
+              </div>
+              <div class="editorial-verified-pill">
+                <span class="check-icon">✓</span>
+                <span>Soroban atomic verified</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: HOW IT WORKS (ATOMIC REFRACTION ARCHITECTURE) -->
+    <section class="works-with-section" id="how-it-works">
+      <div class="content-container">
+        
+        <div class="section-headline-block">
+          <div class="editorial-pill-tag">ATOMIC REFRACTION ARCHITECTURE</div>
+          <h2 class="editorial-section-title">
+            How PRISM Refracts Capital
+          </h2>
+          <p class="editorial-section-sub">
+            Building a diversified portfolio on traditional brokerages or EVM chains requires high minimum capital and multiple costly trades. PRISM executes multi-asset index purchases in <strong>1 single atomic transaction</strong> on Stellar.
+          </p>
+          <div class="section-action-row">
+            <a href="#simulator" class="btn-yellow-pill">
+              <span>Test with $100</span>
+              <span class="btn-arrow">→</span>
+            </a>
+            <a href="https://github.com/stellar" target="_blank" rel="noopener" class="btn-white-pill">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              <span>GitHub Soroban</span>
+              <span class="btn-arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3 Core Problems & Solutions from Brand Guide -->
+        <div class="problems-solutions-grid">
+          
+          <div class="problem-sol-card">
+            <span class="card-num-badge">01</span>
+            <h3 class="ps-title">High Barriers &amp; Friction</h3>
+            <p class="ps-problem">On traditional brokerages, buying 10 assets requires high minimum deposits and multiple spread fees.</p>
+            <p class="ps-solution"><strong>1-Click Atomic Refraction:</strong> Invest in complete index baskets in a single Path Payment transaction on Stellar.</p>
+          </div>
+
+          <div class="problem-sol-card">
+            <span class="card-num-badge">02</span>
+            <h3 class="ps-title">Financial Literacy Gap</h3>
+            <p class="ps-problem">Millions in emerging markets want to invest but lack guidance on diversification and asset correlation.</p>
+            <p class="ps-solution"><strong>Learn-to-Invest Quests:</strong> Duolingo for wealth. Complete 2-minute lessons to unlock $1–$5 starter USDC grants.</p>
+          </div>
+
+          <div class="problem-sol-card">
+            <span class="card-num-badge">03</span>
+            <h3 class="ps-title">Unbanked Global Access</h3>
+            <p class="ps-problem">Traditional brokers require US bank accounts, SSNs, and exclude non-accredited global retail savers.</p>
+            <p class="ps-solution"><strong>$1.00 Micro-Investing:</strong> Sub-cent fees ($0.00001) allow investing starting from $1.00 via local MoneyGram cash ramps.</p>
+          </div>
+
+        </div>
+
+        <!-- Central Artifact Connector Diagram -->
+        <div class="artifact-connector-stage">
+          <div class="connector-nodes-wrapper">
+            
+            <!-- Left Card: Terminal Output -->
+            <div class="node-card terminal-node">
+              <div class="node-badge">Stellar Path Payment</div>
+              <div class="node-terminal-content">
+                <p class="node-term-line term-green">&gt; soroban contract invoke</p>
+                <p class="node-term-line">✓ Deposit: $1.00 USDC</p>
+                <p class="node-term-line">✓ Authorized via Passkey</p>
+                <p class="node-term-line">✓ Refracted across 5 SAC legs</p>
+                <p class="node-term-footer">Settled in 3.4 seconds &bull; Fee &lt;$0.0001</p>
+              </div>
+            </div>
+
+            <!-- Center Monolith: 3D Block with PRISM Icon -->
+            <div class="node-center-monolith">
+              <div class="stone-block-cube">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 22 22 22"></polygon>
+                  <line x1="12" y1="2" x2="12" y2="22" stroke-dasharray="2 2"></line>
+                  <line x1="7" y1="12" x2="17" y2="12"></line>
+                  <circle cx="12" cy="12" r="3" fill="#FDDA24"></circle>
+                </svg>
+                <span class="monolith-label">PRISM.SAC</span>
+              </div>
+            </div>
+
+            <!-- Right Card: Basket Allocator TSX -->
+            <div class="node-card code-node">
+              <div class="node-badge">BasketAllocation.tsx</div>
+              <div class="node-code-content">
+                <span class="c-kw">export const</span> GlobalTech5 = {<br>
+                &nbsp;&nbsp;TSLA: <span class="c-num">0.25</span>, <span class="c-comment">// Equities</span><br>
+                &nbsp;&nbsp;AAPL: <span class="c-num">0.25</span>, <span class="c-comment">// Equities</span><br>
+                &nbsp;&nbsp;XLM:&nbsp; <span class="c-num">0.20</span>, <span class="c-comment">// Native</span><br>
+                &nbsp;&nbsp;USTB: <span class="c-num">0.15</span>, <span class="c-comment">// Yield RWA</span><br>
+                &nbsp;&nbsp;wBTC: <span class="c-num">0.15</span>  <span class="c-comment">// Store of Value</span><br>
+                };
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Compatible Stellar Tokens Row -->
+        <div class="compatible-tokens-container">
+          <h3 class="compatible-tokens-label">Compatible Stellar Ecosystem Assets</h3>
+          <div class="tokens-cards-row">
+            
+            <div class="token-agent-card">
+              <span class="token-idx">#1</span>
+              <div class="token-avatar token-usdc">$</div>
+              <span class="token-name">USDC</span>
+              <span class="token-sub">Circle SAC</span>
+            </div>
+
+            <div class="token-agent-card">
+              <span class="token-idx">#2</span>
+              <div class="token-avatar token-xlm">✦</div>
+              <span class="token-name">XLM</span>
+              <span class="token-sub">Stellar Native</span>
+            </div>
+
+            <div class="token-agent-card">
+              <span class="token-idx">#3</span>
+              <div class="token-avatar token-tsla">T</div>
+              <span class="token-name">TSLA</span>
+              <span class="token-sub">Tokenized RWA</span>
+            </div>
+
+            <div class="token-agent-card">
+              <span class="token-idx">#4</span>
+              <div class="token-avatar token-aapl"></div>
+              <span class="token-name">AAPL</span>
+              <span class="token-sub">Apple Equity</span>
+            </div>
+
+            <div class="token-agent-card">
+              <span class="token-idx">#5</span>
+              <div class="token-avatar token-ustb">🏛</div>
+              <span class="token-name">USTB</span>
+              <span class="token-sub">T-Bills 5.1%</span>
+            </div>
+
+            <div class="token-agent-card">
+              <span class="token-idx">#6</span>
+              <div class="token-avatar token-eurc">€</div>
+              <span class="token-name">EURC</span>
+              <span class="token-sub">Euro SAC</span>
+            </div>
+
+            <div class="token-agent-card">
+              <span class="token-idx">#7</span>
+              <div class="token-avatar token-gold">◈</div>
+              <span class="token-name">PAXG</span>
+              <span class="token-sub">Physical Gold</span>
+            </div>
+
+            <div class="token-agent-card">
+              <span class="token-idx">#8</span>
+              <div class="token-avatar token-cctp">⤢</div>
+              <span class="token-name">CCTP</span>
+              <span class="token-sub">Circle Bridge</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: REFRACTION SIMULATOR (FINTECH PLAYGROUND) -->
+    <section class="simulator-section" id="simulator">
+      <div class="content-container">
+        
+        <div class="section-headline-block">
+          <div class="editorial-pill-tag">LIVE SIMULATION</div>
+          <h2 class="editorial-section-title">
+            Test the Refraction Engine
+          </h2>
+          <p class="editorial-section-sub">
+            Experience how Soroban executes atomic diversification in a single transaction. Enter any deposit amount and inspect the exact SAC transfer distribution.
+          </p>
+        </div>
+
+        <div class="simulator-card-surface">
+          <div class="sim-grid">
+            
+            <!-- Left: Controls -->
+            <div class="sim-controls-pane">
+              
+              <div class="sim-field-group">
+                <label for="basketSelect" class="sim-field-label">Select Index Basket</label>
+                <select id="basketSelect" class="sim-select-input">
+                  <option value="tech">Global Innovation 5 (RWAs + Bluechip)</option>
+                  <option value="inflation">LatAm Inflation Shield (USDC + Gold + Treasuries)</option>
+                  <option value="defi">DeFi Bluechips &amp; Staking (AQUA + XLM + AMM)</option>
+                </select>
+              </div>
+
+              <div class="sim-field-group">
+                <label for="depositAmount" class="sim-field-label">Deposit Capital (USDC)</label>
+                <div class="sim-amount-input-box">
+                  <span class="currency-symbol">$</span>
+                  <input type="number" id="depositAmount" value="100" min="1" max="100000" class="sim-input-number">
+                  <span class="currency-code">USDC</span>
+                </div>
+                
+                <!-- Quick Amount Chips -->
+                <div class="sim-chips-row">
+                  <button type="button" class="sim-chip" data-amount="10">$10</button>
+                  <button type="button" class="sim-chip" data-amount="50">$50</button>
+                  <button type="button" class="sim-chip active" data-amount="100">$100</button>
+                  <button type="button" class="sim-chip" data-amount="500">$500</button>
+                  <button type="button" class="sim-chip" data-amount="2500">$2,500</button>
+                </div>
+              </div>
+
+              <!-- Gas & Network Comparison -->
+              <div class="sim-comparison-card">
+                <div class="comparison-row">
+                  <div class="comp-col">
+                    <span class="comp-label">STELLAR SOROBAN</span>
+                    <span class="comp-val val-green">$0.00001</span>
+                    <span class="comp-sub">1 Atomic Transaction</span>
+                  </div>
+                  <div class="comp-divider"></div>
+                  <div class="comp-col">
+                    <span class="comp-label">TRADITIONAL BROKER</span>
+                    <span class="comp-val val-muted">$45.00+</span>
+                    <span class="comp-sub">5 Separate Wire/Trades</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Execute Button -->
+              <button class="btn-execute-refract" id="btnSimulate">
+                <span class="btn-sparkle">✦</span>
+                <span id="btnSimulateText">Simulate Atomic Refraction</span>
+              </button>
+
+            </div>
+
+            <!-- Right: Dynamic Visual Output -->
+            <div class="sim-output-pane">
+              <div class="output-header-row">
+                <span class="output-title">Atomic Asset Distribution</span>
+                <span class="output-settlement-badge" id="simSettlementBadge">~3.5s Settlement</span>
+              </div>
+
+              <!-- Dynamic Stacked Bar -->
+              <div class="allocation-bar-visual" id="allocationBarVisual">
+                <!-- Injected via script.js -->
+              </div>
+
+              <!-- Dynamic Breakdown List -->
+              <div class="refraction-breakdown-list" id="refractionBreakdownList">
+                <!-- Injected via script.js -->
+              </div>
+
+              <!-- Soroban Simulation Trace Log -->
+              <div class="soroban-trace-box" id="sorobanTraceBox">
+                <div class="trace-header">
+                  <span class="trace-dot"></span>
+                  <span>Soroban VM Protocol 27 Execution Trace</span>
+                </div>
+                <div class="trace-lines" id="traceOutput">
+                  Ready to simulate. Click "Simulate Atomic Refraction" above.
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: COMMUNITY INDEX MARKETPLACE -->
+    <section class="marketplace-section" id="marketplace">
+      <div class="content-container">
+        
+        <div class="section-headline-block">
+          <div class="editorial-pill-tag">COMMUNITY CURATION</div>
+          <h2 class="editorial-section-title">
+            Curated Index Baskets
+          </h2>
+          <p class="editorial-section-sub">
+            Discover top-performing Prisms published by financial educators, community traders, or AI algorithms. Creators earn a <strong>0.1% curation yield</strong> on community deposits.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="market-filter-tabs">
+          <button class="tab-pill active" data-filter="all">All Baskets (3)</button>
+          <button class="tab-pill" data-filter="rwa">Real-World Assets</button>
+          <button class="tab-pill" data-filter="stable">Inflation Shields</button>
+          <button class="tab-pill" data-filter="crypto">Crypto &amp; DeFi</button>
+        </div>
+
+        <!-- Baskets Grid (Injected via script.js) -->
+        <div class="baskets-cards-grid" id="basketsGrid">
+          <!-- Populated by script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: PAPER TRADING SANDBOX -->
+    <section class="sandbox-section" id="sandbox">
+      <div class="content-container">
+        
+        <div class="section-headline-block">
+          <div class="editorial-pill-tag">RISK-FREE LEARNING</div>
+          <h2 class="editorial-section-title">
+            Paper Trading Sandbox
+          </h2>
+          <p class="editorial-section-sub">
+            Learn index investing hands-on with a simulated <strong>$10,000 USDC</strong> test portfolio on the Stellar testnet. No real capital at risk.
+          </p>
+        </div>
+
+        <div class="sandbox-surface-card">
+          <div class="sandbox-header-stats">
+            <div class="sb-stat">
+              <span class="sb-caption">AVAILABLE SANDBOX USDC</span>
+              <span class="sb-number" id="sandboxBalanceDisplay">$10,000.00</span>
+            </div>
+            <div class="sb-stat">
+              <span class="sb-caption">TOTAL PORTFOLIO VALUE</span>
+              <span class="sb-number" id="portfolioValueDisplay">$10,000.00</span>
+            </div>
+            <div class="sb-stat">
+              <span class="sb-caption">SIMULATED 30D RETURN</span>
+              <span class="sb-number text-green" id="portfolioReturnDisplay">+0.0%</span>
+            </div>
+            <button class="btn-reset-sandbox" id="btnResetSandbox" title="Reset Sandbox to $10,000">
+              Reset $10,000
+            </button>
+          </div>
+
+          <!-- Sandbox Active Holdings -->
+          <div class="sandbox-holdings-container">
+            <h4 class="holdings-title">Simulated Holdings</h4>
+            <div class="holdings-table-wrapper" id="holdingsTableWrapper">
+              <p class="empty-holdings-msg">You haven't allocated to any baskets yet. Use the marketplace above or click below to invest test USDC.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: FINANCIAL EDUCATION (LEARN-TO-INVEST QUEST ENGINE) -->
+    <section class="academy-section" id="learn">
+      <div class="content-container">
+        
+        <div class="section-headline-block">
+          <div class="editorial-pill-tag">DUOLINGO FOR WEALTH</div>
+          <h2 class="editorial-section-title">
+            Learn as you grow.
+          </h2>
+          <p class="editorial-section-sub">
+            Master diversification, risk balancing, and tokenized RWAs with bite-sized lessons. Complete quizzes to unlock $1–$5 USDC starter rewards.
+          </p>
+        </div>
+
+        <div class="academy-lessons-grid">
+          
+          <div class="lesson-card" data-lesson-id="1">
+            <div class="lesson-tag">MODULE 01</div>
+            <h3 class="lesson-card-title">Why Single-Stock Picking Destroys Wealth</h3>
+            <p class="lesson-card-desc">Learn why index funds outperform 89% of professional active traders over 10-year horizons, and how diversification reduces portfolio drawdown.</p>
+            <div class="lesson-footer">
+              <span class="lesson-time">4 min read</span>
+              <button class="btn-start-lesson" data-lesson="1">Start Lesson →</button>
+            </div>
+          </div>
+
+          <div class="lesson-card" data-lesson-id="2">
+            <div class="lesson-tag">MODULE 02</div>
+            <h3 class="lesson-card-title">What is a Stellar Asset Contract (SAC)?</h3>
+            <p class="lesson-card-desc">Understand how Stellar Protocol 27 bridges classic ledger balances (USDC, XLM) directly into Turing-complete Soroban smart contracts.</p>
+            <div class="lesson-footer">
+              <span class="lesson-time">5 min read</span>
+              <button class="btn-start-lesson" data-lesson="2">Start Lesson →</button>
+            </div>
+          </div>
+
+          <div class="lesson-card" data-lesson-id="3">
+            <div class="lesson-tag">MODULE 03</div>
+            <h3 class="lesson-card-title">Hedging Emerging Market Inflation</h3>
+            <p class="lesson-card-desc">How investors in Brazil, Nigeria, and Argentina use dollar-denominated index baskets and tokenized gold to shield local currency purchasing power.</p>
+            <div class="lesson-footer">
+              <span class="lesson-time">6 min read</span>
+              <button class="btn-start-lesson" data-lesson="3">Start Lesson →</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 7: PROTOCOL & ARCHITECTURE (STELLAR SOROBAN BENTO) -->
+    <section class="protocol-section" id="protocol">
+      <div class="content-container">
+        
+        <div class="section-headline-block">
+          <div class="editorial-pill-tag">STELLAR SOROBAN PROTOCOL 27</div>
+          <h2 class="editorial-section-title">
+            Engineered for High-Integrity Finance
+          </h2>
+          <p class="editorial-section-sub">
+            PRISM is not a centralized API. It is an open-source, non-custodial smart contract protocol built with Rust and verified on the Stellar Network.
+          </p>
+        </div>
+
+        <div class="protocol-bento-grid">
+          
+          <div class="bento-tile bento-large">
+            <div class="tile-tag">ATOMIC REFRACTION</div>
+            <h3 class="tile-title">Single Transaction Multicall</h3>
+            <p class="tile-body">
+              Traditional brokers require 10 distinct trades with 10 spread markups. PRISM executes complete basket allocation inside a single Soroban invocation: all asset legs settle simultaneously, or the entire transaction safely reverts.
+            </p>
+            <div class="tile-metric-row">
+              <div>
+                <span class="metric-num">&lt;0.00001 XLM</span>
+                <span class="metric-cap">Network Execution Cost</span>
+              </div>
+              <div>
+                <span class="metric-num">3.5s</span>
+                <span class="metric-cap">Finality Ledger Time</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-tile">
+            <div class="tile-tag">NON-CUSTODIAL</div>
+            <h3 class="tile-title">Direct SAC Ownership</h3>
+            <p class="tile-body">
+              PRISM never holds your private keys or pooled custodial balances. Tokens are transferred directly from your wallet to the respective Stellar Asset Contracts.
+            </p>
+          </div>
+
+          <div class="bento-tile">
+            <div class="tile-tag">AI &amp; RAVEN MCP</div>
+            <h3 class="tile-title">Autonomous Agent Ready</h3>
+            <p class="tile-body">
+              Autonomous AI trading agents can query basket state and trigger auto-rebalancing via standard MCP prompts and programmatic SAC payments.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="editorial-footer">
+    <div class="content-container footer-flex">
+      
+      <div class="footer-left">
+        <a href="#" class="brand-pill footer-brand">
+          <span class="brand-symbol">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+              <polygon points="12 2 2 22 22 22"></polygon>
+            </svg>
+          </span>
+          <span class="brand-text">PRISM</span>
+        </a>
+        <p class="footer-copy">
+          The Anti-Friction Index Protocol built for the Stellar Blockchain.<br>
+          Powered by Soroban Smart Contracts (Protocol 27).<br>
+          <em>Create a Prism. Invest in any Prism. Learn as you grow.</em>
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-col">
+          <span class="col-title">Protocol</span>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#simulator">Simulator</a>
+          <a href="#marketplace">Baskets</a>
+          <a href="#sandbox">Sandbox</a>
+        </div>
+        <div class="footer-col">
+          <span class="col-title">Developers</span>
+          <a href="https://developers.stellar.org/" target="_blank" rel="noopener">Stellar Docs</a>
+          <a href="https://developers.stellar.org/docs/build/building-with-ai" target="_blank" rel="noopener">Building with AI</a>
+          <a href="/llms.txt">llms.txt Spec</a>
+          <a href="https://github.com/stellar" target="_blank" rel="noopener">Soroban SDK</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+
+  <!-- 1. Wallet Modal -->
+  <div class="taste-modal" id="walletModal" role="dialog" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="walletModalTitle">Connect Wallet</h3>
+        <button class="modal-close-btn" id="btnCloseWalletModal">&times;</button>
+      </div>
+      <p class="modal-subtext" id="walletModalSubtext">Choose your preferred Stellar connection method.</p>
+      
+      <!-- Connect Options View -->
+      <div class="wallet-options-list" id="walletConnectView">
+        <button class="wallet-option-item" data-wallet="freighter">
+          <div class="wallet-icon-badge">⚓</div>
+          <div class="wallet-info">
+            <div class="wallet-name">Freighter Wallet</div>
+            <div class="wallet-desc">Stellar browser extension &amp; hardware support</div>
+          </div>
+        </button>
+        <button class="wallet-option-item" data-wallet="passkey">
+          <div class="wallet-icon-badge">🔑</div>
+          <div class="wallet-info">
+            <div class="wallet-name">Passkey Smart Account</div>
+            <div class="wallet-desc">Touch ID / Face ID non-custodial biometric key</div>
+          </div>
+        </button>
+        <button class="wallet-option-item" data-wallet="albedo">
+          <div class="wallet-icon-badge">⚡</div>
+          <div class="wallet-info">
+            <div class="wallet-name">Albedo Web Signer</div>
+            <div class="wallet-desc">Web-based zero-install signer protocol</div>
+          </div>
+        </button>
+        <button class="wallet-option-item" data-wallet="testnet">
+          <div class="wallet-icon-badge">✦</div>
+          <div class="wallet-info">
+            <div class="wallet-name">Instant Testnet Dev Keypair</div>
+            <div class="wallet-desc">Auto-funded testnet keypair for instant zero-risk sandbox testing</div>
+          </div>
+        </button>
+      </div>
+
+      <!-- Connected Account Details View (Displayed when connected) -->
+      <div class="wallet-connected-view" id="walletConnectedView" style="display: none;">
+        <div class="connected-badge-row">
+          <span class="connected-status-pill">
+            <span class="pulse-dot"></span>
+            <span id="connectedProviderText">Connected via Freighter</span>
+          </span>
+          <span class="network-badge">Testnet (Protocol 27)</span>
+        </div>
+
+        <div class="connected-address-card">
+          <span class="addr-label">PUBLIC KEY</span>
+          <div class="addr-row">
+            <code class="addr-code" id="connectedAddressFull">GB3X...</code>
+            <button class="btn-copy-addr" id="btnCopyAddress" title="Copy Address">COPY</button>
+          </div>
+        </div>
+
+        <div class="connected-balances-grid">
+          <div class="bal-col">
+            <span class="bal-label">XLM BALANCE</span>
+            <span class="bal-val" id="connectedXlmBalance">10,000.00 XLM</span>
+          </div>
+          <div class="bal-col">
+            <span class="bal-label">USDC (SAC)</span>
+            <span class="bal-val" id="connectedUsdcBalance">500.00 USDC</span>
+          </div>
+        </div>
+
+        <div class="connected-actions-row">
+          <button class="btn-friendbot" id="btnFundFriendbot">
+            <span>✦ Fund +10,000 XLM (Friendbot)</span>
+          </button>
+          <button class="btn-disconnect-wallet" id="btnDisconnectWallet">
+            Disconnect
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 2. Invest / Buy Modal -->
+  <div class="taste-modal" id="buyModal" role="dialog" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="buyModalTitle">Invest in Basket</h3>
+        <button class="modal-close-btn" id="btnCloseBuyModal">&times;</button>
+      </div>
+      <p class="modal-subtext" id="buyModalSubtext">Execute atomic refraction on Stellar.</p>
+      
+      <div class="buy-form-body">
+        <label for="buyAmountInput" class="sim-field-label">Deposit Amount (USDC)</label>
+        <div class="sim-amount-input-box">
+          <span class="currency-symbol">$</span>
+          <input type="number" id="buyAmountInput" value="50" min="1" max="10000" class="sim-input-number">
+          <span class="currency-code">USDC</span>
+        </div>
+
+        <div class="buy-summary-box">
+          <div class="summary-line">
+            <span>Protocol Network Fee:</span>
+            <strong class="text-green">&lt;0.00001 XLM ($0.000001)</strong>
+          </div>
+          <div class="summary-line">
+            <span>Execution Type:</span>
+            <strong>Atomic Soroban Multicall</strong>
+          </div>
+        </div>
+
+        <button class="btn-execute-refract" id="btnConfirmBuy">
+          <span>Confirm &bull; Execute via Soroban</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Academy Lesson Modal -->
+  <div class="taste-modal" id="lessonModal" role="dialog" aria-hidden="true">
+    <div class="modal-card modal-large">
+      <div class="modal-header">
+        <h3 class="modal-title" id="lessonModalTitle">Lesson Module</h3>
+        <button class="modal-close-btn" id="btnCloseLessonModal">&times;</button>
+      </div>
+      <div class="lesson-modal-body" id="lessonModalContent">
+        <!-- Injected via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Stellar Raven AI Copilot Modal -->
+  <div class="taste-modal" id="aiModal" role="dialog" aria-hidden="true">
+    <div class="modal-card modal-ai">
+      <div class="modal-header">
+        <div class="ai-header-brand">
+          <span class="ai-sparkle-pill">✦ Raven AI</span>
+          <h3 class="modal-title">Stellar AI Copilot</h3>
+        </div>
+        <button class="modal-close-btn" id="btnCloseAiModal">&times;</button>
+      </div>
+      <p class="modal-subtext">Powered by official Stellar Developer Documentation &amp; Raven MCP Server.</p>
+      
+      <div class="ai-chat-thread" id="aiChatThread">
+        <div class="ai-msg ai-msg-bot">
+          Hello! I am your PRISM assistant connected to the Stellar Raven ecosystem knowledge base. Ask me about Soroban Protocol 27, atomic refraction, index rebalancing, or passkey wallets.
+        </div>
+      </div>
+
+      <div class="ai-quick-prompts">
+        <button class="ai-prompt-btn" data-query="How does atomic refraction work on Soroban?">Atomic refraction?</button>
+        <button class="ai-prompt-btn" data-query="What is a Stellar Asset Contract (SAC)?">What is SAC?</button>
+        <button class="ai-prompt-btn" data-query="How do I connect Freighter or passkeys?">Passkeys?</button>
+      </div>
+
+      <div class="ai-input-bar">
+        <input type="text" id="aiUserInput" placeholder="Ask anything about PRISM or Stellar..." class="ai-input-field">
+        <button class="ai-send-btn" id="btnSendAi">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING AI TRIGGER BUTTON -->
+  <button class="floating-ai-button" id="btnFloatingAi" aria-label="Open Stellar Raven AI Copilot">
+    <span class="floating-ai-icon">✦</span>
+    <span class="floating-ai-text">Ask AI</span>
+  </button>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

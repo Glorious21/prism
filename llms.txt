@@ -1,0 +1,22 @@
+# PRISM — Decentralized Index Baskets on Stellar
+PRISM is a community-curated index basket and financial education platform built on the Stellar blockchain utilizing Soroban smart contracts (Protocol 27). It enables micro-investing from $1.00 via atomic portfolio refraction across tokenized equities, real-world assets (RWAs), and digital assets with sub-cent transaction fees.
+
+## AI & Agent Access
+- Remote MCP Server: https://raven.stellar.buzz/mcp
+- Machine Payments Protocol (MPP): Supports automated agent-to-agent portfolio rebalancing and per-query analytics payments via USDC SAC.
+- Smart Contracts: Rust soroban-sdk Protocol 27 (wasm32v1-none)
+- JavaScript SDK: @stellar/stellar-sdk v16+
+- Wallet Standard: Freighter API, Stellar Wallets Kit v2, Passkey biometric accounts
+
+## Documentation Structure
+- [Overview](index.html): Platform architecture and visual showcase
+- [Soroban Smart Contract](contracts/prism/src/lib.rs): Core atomic refraction and basket curation contract
+- [Contract Configuration](contracts/prism/Cargo.toml): Soroban SDK dependencies and build profiles
+- [Design System](style.css): Stellar brand identity implementation (Lora serif, Inter sans, Stellar Yellow #FDDA24)
+- [Client Logic & Simulation](script.js): Refraction math, paper trading sandbox, and interactive execution engine
+
+## Core Concepts
+- Refraction Mechanic: Takes a single deposit of USDC/XLM and atomically splits it across basket target assets in one transaction.
+- Micro-investing: Eliminates minimums with sub-cent fees (<$0.0001 per trade).
+- Community Curation: Curators define asset weights and earn 0.1%–0.5% royalties on new deposits.
+- Paper Trading: $10,000 risk-free testnet sandbox for simulating investments.
