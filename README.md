@@ -1,93 +1,135 @@
+﻿<div align="center">
+
 # PRISM ✦
 
-> **Create a Prism. Invest in any Prism. Learn as you grow.**
+**Create a Prism. Invest in any Prism.**
 
-```
-   _____  _____  _____  _____ __  __ 
-  |  __ \|  __ \|_   _|/ ____|  \/  |
-  | |__) | |__) | | | | (___ | \  / |
-  |  ___/|  _  /  | |  \___ \| |\/| |
-  | |    | | \ \ _| |_ ____) | |  | |
-  |_|    |_|  \_\_____|_____/|_|  |_|
-                                     
-  [ $1.00 USDC ] ───► ( PRISM Soroban Engine ) ───► [ Full Spectrum of Stocks & RWAs ]
-```
+*A decentralized index basket & financial education protocol built on Stellar Soroban.*
 
-PRISM is a decentralized, community-curated index basket and financial education platform built on the **Stellar blockchain** utilizing **Soroban Smart Contracts (Protocol 27)**. It enables micro-investing from **$1.00** via atomic portfolio refraction across tokenized US equities, Treasury yields, commodities, and digital store-of-value assets with sub-cent network fees.
+[![License: MIT](https://img.shields.io/badge/License-MIT-FDDA24.svg?style=flat-square&labelColor=0F0F0F)](LICENSE)
+[![Stellar](https://img.shields.io/badge/Stellar-Soroban%20Protocol%2027-0F0F0F?style=flat-square&logo=stellar&logoColor=FDDA24)](https://stellar.org)
+[![Network](https://img.shields.io/badge/Network-Testnet-blue?style=flat-square)](https://soroban-testnet.stellar.org)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
+
+[Demo](#-getting-started) · [Report Bug](https://github.com/Glorious21/prism/issues/new?template=bug_report.md) · [Request Feature](https://github.com/Glorious21/prism/issues/new?template=feature_request.md) · [Contribute](CONTRIBUTING.md)
+
+</div>
 
 ---
 
-## ✦ The Brand Concept: Why "PRISM"?
+## 📖 Table of Contents
 
-A physical prism takes a single ray of white light and refracts it into a brilliant spectrum of color.
+- [About](#-about)
+- [Core Features](#-core-features)
+- [Architecture](#-architecture)
+- [Getting Started](#-getting-started)
+- [Smart Contract](#-smart-contract)
+- [Contributing](#-contributing)
+- [Roadmap](#-roadmap)
+- [License](#-license)
+- [Acknowledgements](#-acknowledgements)
 
-**PRISM Protocol** takes **1 single USDC deposit** from a user and automatically **refracts it across a full spectrum of tokenized stocks, T-Bills, and commodities** on Stellar in a single atomic transaction.
+---
 
-* **Headline:** *"Create a Prism. Invest in any Prism."*
-* **Design System:** Strictly built according to the official Stellar Brand Guide:
-  - **Stellar Yellow** (`#FDDA24`): Primary brand accent, CTAs, and interactive highlights
-  - **Stellar Black** (`#0F0F0F`): High-contrast typography and dark surfaces
-  - **Pure White** (`#FFFFFF`): Clean editorial canvas
-  - **Lora Serif**: Display headlines (`-0.03em` tracking)
-  - **Inter Sans**: Crisp UI, navigation, and body copy
-  - **JetBrains Mono**: Terminal code blocks and ledger trace logs
+## ✦ About
+
+A physical prism refracts a single ray of white light into a brilliant spectrum of color.
+
+**PRISM Protocol** takes **one single USDC deposit** and automatically refracts it across a full spectrum of tokenized stocks, T-Bills, and commodities on Stellar — in a single atomic Soroban transaction.
+
+- **Minimum investment:** $1.00 USDC
+- **Settlement time:** ~3.5 seconds
+- **Network fees:** Sub-cent (Stellar)
+- **Assets supported:** US Equities (TSLA, AAPL), Treasury yields (USTB, BENJI), Commodities (PAXG), XLM
+
+> PRISM is currently deployed on **Stellar Testnet**. Mainnet launch is on the roadmap.
 
 ---
 
 ## ✦ Core Features
 
-### 1. 1-Click Atomic Refraction (Path Payments & SAC)
-On traditional brokerages, buying 10 stocks requires high capital minimums and multiple spread markups. PRISM executes multi-asset index allocations in **1 single atomic Soroban transaction**: all legs settle simultaneously in ~3.5 seconds, or the transaction safely reverts.
-
-### 2. Community Index Basket Marketplace
-* **Curate Custom Baskets:** Creators set target weight allocations across US equities (TSLA, AAPL), Treasury yields (USTB, BENJI), commodities (PAXG Gold), and native assets (XLM).
-* **Curate-to-Earn Yield:** Basket creators earn a 0.10%–0.50% curation royalty whenever community members invest in their published Prism.
-* **Filter by Category:** Real-World Assets (RWAs), Inflation Shields, and Crypto & DeFi bluechips.
-
-### 3. Learn-to-Invest Quest Engine (*Duolingo for Wealth*)
-* **Interactive 2-Minute Modules:** Learn diversification, dollar-cost averaging, and Stellar Asset Contract (SAC) mechanics.
-* **Learn-to-Earn Grants:** Completing interactive quizzes unlocks **$1.00–$5.00 USDC** grants credited directly into the user's sandbox portfolio.
-
-### 4. Paper Trading Sandbox
-* **Risk-Free Simulator:** Test and rebalance baskets with **$10,000 virtual Testnet USDC** against live market data without risking real money.
-* **Live Holdings Dashboard:** Real-time simulated 30-day returns and portfolio valuation.
-
-### 5. Multi-Wallet & Passkey Support
-* **Freighter Wallet:** Native browser extension integration via `@stellar/freighter-api`.
-* **Passkeys:** Biometric Face ID / Touch ID smart account authorization via WebAuthn.
-* **Albedo Web Signer:** Web-based instant signing protocol.
-* **Instant Testnet Dev Keypair:** Zero-friction testnet account creation with live **Friendbot Faucet** funding (+10,000 Testnet XLM).
+| Feature | Description |
+|---|---|
+| 🔬 **Atomic Refraction** | 1-click multi-asset allocation in a single Soroban transaction |
+| 🏪 **Index Marketplace** | Browse, create, and invest in community-curated Prism baskets |
+| 🎓 **Learn-to-Earn** | Interactive finance lessons with USDC grants upon completion |
+| 🧪 **Paper Sandbox** | Risk-free simulator with $10,000 virtual Testnet USDC |
+| 🔑 **Multi-Wallet** | Freighter, Albedo, passkey (WebAuthn), and dev keypair support |
+| 💸 **Curate-to-Earn** | Basket creators earn 0.10%–0.50% royalty on investments |
 
 ---
 
-## ✦ Architecture & Endpoints
+## ✦ Architecture
 
-| Component | Technology | Live Endpoint |
+```
+[ User USDC ] ──► [ PRISM Soroban Engine ] ──► [ Multi-Asset Portfolio ]
+                          │
+                  ┌───────┴────────┐
+                  │  Soroban RPC   │
+                  │ (Protocol 27)  │
+                  └───────┬────────┘
+                          │
+          ┌───────────────┼───────────────┐
+          ▼               ▼               ▼
+      [TSLA SAC]      [PAXG SAC]      [USTB SAC]
+```
+
+| Component | Technology | Endpoint |
 |---|---|---|
-| **Soroban Smart Contract** | Rust (`wasm32v1-none`) Protocol 27 | `contracts/prism/src/lib.rs` |
-| **Soroban RPC** | JSON-RPC 2.0 | `https://soroban-testnet.stellar.org` |
-| **Stellar Horizon** | REST API | `https://horizon-testnet.stellar.org` |
-| **Friendbot Faucet** | Testnet Funding | `https://friendbot.stellar.org` |
-| **Agent / MCP Spec** | Machine Payments Protocol (MPP) | `/llms.txt` |
-| **Frontend** | Vanilla JS + High-Taste CSS | `index.html`, `style.css`, `script.js` |
+| Smart Contract | Rust (wasm32v1-none) / Soroban Protocol 27 | `contracts/prism/src/lib.rs` |
+| Soroban RPC | JSON-RPC 2.0 | `https://soroban-testnet.stellar.org` |
+| Stellar Horizon | REST API | `https://horizon-testnet.stellar.org` |
+| Friendbot Faucet | Testnet funding | `https://friendbot.stellar.org` |
+| Frontend | Vanilla JS + CSS | `index.html`, `style.css`, `script.js` |
+| Agent Spec | Machine Payments Protocol (MPP) | `llms.txt` |
 
 ---
 
-## ✦ Smart Contract Anatomy
+## ✦ Getting Started
 
-The core contract (`contracts/prism/src/lib.rs`) implements atomic refraction using Soroban's SAC interface:
+### Prerequisites
+
+- A modern browser (Chrome, Firefox, Brave)
+- [Freighter Wallet](https://freighter.app/) browser extension *(optional)*
+- Python 3 or any static file server
+
+### Local Development
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Glorious21/prism.git
+cd prism
+
+# 2. Start a local static server
+python -m http.server 8085
+
+# 3. Open in your browser at http://localhost:8085/
+```
+
+### Connecting a Wallet
+
+1. Click **"Connect Wallet"** in the top navigation
+2. Choose from:
+   - **Freighter** — Install the extension, switch to Testnet
+   - **Dev Keypair** — Auto-generated, auto-funded via Friendbot (zero setup)
+3. Fund your testnet account at [Stellar Laboratory](https://laboratory.stellar.org/#account-creator?network=testnet)
+
+---
+
+## ✦ Smart Contract
+
+The core Soroban contract (`contracts/prism/src/lib.rs`) implements atomic portfolio refraction:
 
 ```rust
 pub fn refract(
-    env: Env, 
-    from: Address, 
-    amount: i128, 
+    env: Env,
+    from: Address,
+    amount: i128,
     basket_id: u32
 ) -> Result<(), Error> {
     from.require_auth();
     let basket = get_basket(&env, basket_id)?;
-    
-    // Single-transaction atomic SAC transfer across target assets
+
     for asset in basket.assets.iter() {
         let share = (amount * asset.bps) / 10_000;
         token::Client::new(&env, &asset.address)
@@ -97,27 +139,76 @@ pub fn refract(
 }
 ```
 
+### Building the Contract
+
+```bash
+# Install the Stellar CLI
+cargo install stellar-cli --features opt
+
+# Build
+cd contracts/prism
+stellar contract build
+
+# Deploy to testnet
+stellar contract deploy \
+  --wasm target/wasm32v1-none/release/prism.wasm \
+  --network testnet \
+  --source YOUR_SECRET_KEY
+```
+
 ---
 
-## ✦ Getting Started Locally
+## ✦ Contributing
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Glorious21/prism.git
-   cd prism
-   ```
+We welcome contributions of all kinds — code, documentation, design, and feedback!
 
-2. **Run local static server:**
-   ```bash
-   # Python 3
-   python -m http.server 8085
-   ```
+Read our **[CONTRIBUTING.md](CONTRIBUTING.md)** to get started.
 
-3. **Open in browser:**
-   Navigate to `http://localhost:8085/`
+```bash
+# Fork the repo on GitHub, then:
+git clone https://github.com/YOUR_USERNAME/prism.git
+cd prism
+git checkout -b feat/your-feature-name
+# Make your changes, then:
+git commit -m "feat: describe your change"
+git push origin feat/your-feature-name
+# Open a Pull Request
+```
+
+See [open issues](https://github.com/Glorious21/prism/issues) — look for the `good first issue` label.
+
+---
+
+## ✦ Roadmap
+
+- [x] Prism Simulator (paper trading sandbox)
+- [x] Index Marketplace with community baskets
+- [x] Multi-wallet support (Freighter, Albedo, passkeys)
+- [x] Learn-to-Earn quest engine
+- [ ] Soroban contract mainnet deployment
+- [ ] Real-time price feeds via Pyth / DIA oracles
+- [ ] Governance module (community voting on basket weights)
+- [ ] Mobile-responsive progressive web app (PWA)
+- [ ] Cross-chain bridge support (CCTP / Axelar)
+- [ ] AI portfolio recommendations
 
 ---
 
 ## ✦ License
 
-Apache 2.0 & MIT — Built for the Stellar Community.
+Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
+
+---
+
+## ✦ Acknowledgements
+
+- [Stellar Development Foundation](https://stellar.org) — Soroban smart contract platform
+- [Freighter](https://freighter.app/) — Stellar browser wallet
+- [Stellar Wallets Kit](https://github.com/Creit-Tech/Stellar-Wallets-Kit) — Multi-wallet support
+- [Drips](https://www.drips.network/) — Open source funding
+
+---
+
+<div align="center">
+Built with ✦ for the Stellar ecosystem
+</div>

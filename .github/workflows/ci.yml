@@ -1,0 +1,76 @@
+﻿name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  # ─────────────────────────────────────────────
+  # Smart Contract Build & Test (Soroban / Rust)
+  # ─────────────────────────────────────────────
+  contracts:
+    name: Soroban Contract Build & Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        uses: actions-rust-lang/setup-rust-toolchain@v1
+        with:
+          toolchain: stable
+          target: wasm32v1-none
+
+      - name: Cache Cargo dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            contracts/target/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('contracts/**/Cargo.lock') }}
+
+      - name: Install Stellar CLI
+        run: cargo install stellar-cli --features opt --locked
+
+      - name: Run contract tests
+        working-directory: contracts/prism
+        run: cargo test
+
+      - name: Build contract WASM
+        working-directory: contracts/prism
+        run: stellar contract build
+
+      - name: Check formatting
+        working-directory: contracts/prism
+        run: cargo fmt --check
+
+      - name: Clippy lint check
+        working-directory: contracts/prism
+        run: cargo clippy -- -D warnings
+
+  # ─────────────────────────────────────────────
+  # Frontend Static Validation
+  # ─────────────────────────────────────────────
+  frontend:
+    name: Frontend Validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate HTML (htmlhint)
+        run: |
+          npx --yes htmlhint index.html --config .htmlhintrc || true
+
+      - name: Check for console.error in production code
+        run: |
+          if grep -rn "console\.error\|debugger;" --include="*.js" .; then
+            echo "⚠️  Found console.error or debugger statements"
+          fi

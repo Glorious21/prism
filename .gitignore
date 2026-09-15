@@ -1,17 +1,46 @@
-# Build & Environment
+﻿# ── Rust / Cargo ──────────────────────────────
 target/
+Cargo.lock
+*.pdb
+
+# ── Node / NPM ────────────────────────────────
 node_modules/
 dist/
-.DS_Store
-Thumbs.db
-*.log
+.npm/
 
-# Editor configs
-.cursor/
-.vscode/
-.idea/
-
-# Environment files
+# ── Environment & Secrets ────────────────────
 .env
 .env.*
 !.env.example
+*.key
+*.pem
+secret.txt
+
+# ── OS Files ─────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor Configs ───────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.cursor/
+
+# ── Logs ─────────────────────────────────────
+*.log
+npm-debug.log*
+
+# ── Build Artifacts ──────────────────────────
+*.wasm
+*.wat
+
+# ── Testing ───────────────────────────────────
+coverage/
+
+# ── Antigravity AI (local dev tool) ──────────
+.agents/
+skills-lock.json
+mcp_config.json
+llms.txt
